@@ -1,13 +1,13 @@
 # House-Price-Prediction-using-Machine-Learning
 This project focuses on predicting house sale prices using machine learning techniques. Housing datasets typically contain a mix of numerical and categorical features that describe various characteristics of a property, such as area, number of rooms, quality rating, location, and more. By learning patterns from this data, machine learning models can forecast the value of a house with considerable accuracy.
 
-## 📘 Introduction
+## Introduction
 
 House price prediction is a regression task where the goal is to estimate a continuous numerical value (Sale Price). Machine Learning helps identify complex relationships between house attributes and their market value, allowing both buyers and sellers to make informed decisions.
 
 This project uses **data preprocessing, exploratory data analysis (EDA), encoding techniques, scaling, and regression algorithms** to build a robust predictive system.
 
-## 🎯 Objective
+## Objective
 
 - Understand dataset features
 
@@ -25,10 +25,10 @@ This project uses **data preprocessing, exploratory data analysis (EDA), encodin
 
 - Identify the best model for price prediction
 
-## 📂 Dataset
+## Dataset
 
 **The dataset used:**
-📄 HousePricePrediction.xlsx
+HousePricePrediction.xlsx
 
 **Contains columns such as:**
 
@@ -46,8 +46,8 @@ This project uses **data preprocessing, exploratory data analysis (EDA), encodin
 
 - SalePrice (target)
 
-## 🔍 Understanding the Steps
-### 📍 1. Data Cleaning & Missing Values
+## Understanding the Steps
+### 1. Data Cleaning & Missing Values
 
 Real-world housing datasets often contain missing values.
 We handle them by:
@@ -60,7 +60,7 @@ We handle them by:
 
 This ensures the dataset is consistent and ready for analysis.
 
-### 📍 2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 
 EDA helps understand the distribution of features and their relationships with the target.
 
@@ -84,8 +84,8 @@ Counting unique categories helps determine:
 - Which features have high cardinality
 Features with too many categories may need more careful encoding.
 
-## ⚙️ Preprocessing Techniques Used
-### 📍 1. Encoding Categorical Data
+## Preprocessing Techniques Used
+### 1. Encoding Categorical Data
 
 Since ML algorithms cannot understand text labels, categorical data is converted into numerical form using:
 
@@ -101,7 +101,7 @@ RoofStyle_Hip: 0/1
 
 This helps the model learn patterns without imposing false ordering.
 
-### 📍 2. Scaling Numerical Features
+### 2. Scaling Numerical Features
 
 Different features have different ranges (e.g., area vs. number of rooms).
 Scaling brings them onto a similar scale, improving model performance.
@@ -112,11 +112,11 @@ Scaling brings them onto a similar scale, improving model performance.
 
 - Prevents large-valued features from dominating the model
 
-## 🤖 Machine Learning Models Used
+## Machine Learning Models Used
 
 The project evaluates multiple regression algorithms:
 
-### 1️⃣ Linear Regression
+### Linear Regression
 
 A simple and fast algorithm that assumes a linear relationship between features and the price.
 
@@ -132,7 +132,7 @@ A simple and fast algorithm that assumes a linear relationship between features 
 
 - Sensitive to outliers
 
-### 2️⃣ Decision Tree Regressor
+### Decision Tree Regressor
 
 A non-linear model that splits the dataset based on feature values.
 
@@ -150,7 +150,7 @@ A non-linear model that splits the dataset based on feature values.
 
 - Sensitive to noise in data
 
-### 3️⃣ Random Forest Regressor
+### Random Forest Regressor
 
 An ensemble of multiple decision trees.
 
@@ -168,7 +168,7 @@ An ensemble of multiple decision trees.
 
 - Training time increases with data size
 
-### 4️⃣ Gradient Boosting Regressor
+### Gradient Boosting Regressor
 
 A powerful boosting algorithm that builds trees sequentially, each correcting errors from the previous one.
 
@@ -186,7 +186,7 @@ A powerful boosting algorithm that builds trees sequentially, each correcting er
 
 - Training time is higher
 
-## 🧮 Model Comparison Summary
+## Model Comparison Summary
 
 Based on the MAE, MSE, and R² metrics:
 
@@ -196,12 +196,12 @@ Based on the MAE, MSE, and R² metrics:
 
 - Random Forest → Strong performance
 
-- Gradient Boosting → ⭐ Best overall performance
+- Gradient Boosting → Best overall performance
 
 Gradient Boosting shows the highest accuracy and best generalization.
 
-## 📊 Visual Outputs
-### 1️⃣ Feature Importance Plot
+## Visual Outputs
+### Feature Importance Plot
 
 Shows which features contribute most to price prediction.
 Examples of highly influential features:
@@ -214,12 +214,12 @@ Examples of highly influential features:
 
 - Number of rooms
 
-### 2️⃣ Actual vs Predicted Plot
+### Actual vs Predicted Plot
 
 Shows model accuracy visually.
 The closer the points lie to the diagonal line, the more accurate the predictions.
 
-## 📁 Project Structure
+## Project Structure
 
 ├── House_Price_Prediction.ipynb  
 
@@ -231,7 +231,7 @@ The closer the points lie to the diagonal line, the more accurate the prediction
 
 └── README.md
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Add more advanced models like XGBoost or LightGBM
 
@@ -253,20 +253,20 @@ The closer the points lie to the diagonal line, the more accurate the prediction
 
 This project demonstrates how machine learning can be effectively used to predict house prices. Gradient Boosting emerged as the best-performing model, showing that ensemble techniques often provide superior accuracy on structured data.
 
-## 👩‍💻 Author
+## Author
 
 Madhavi Thatha
 
-## 🤝 Need Help or Want to Contribute?
+## Need Help or Want to Contribute?
 
 If anyone needs help understanding this project or wants guidance on improving it, feel free to reach out anytime — I’m happy to help!
 
-### 💡 Contributions
+### Contributions
 
 Contributions, suggestions, and improvements are always welcome.
 
 I will review and merge PRs that add value to the project.
 
-## 📜 License
+## License
 
 MIT License
